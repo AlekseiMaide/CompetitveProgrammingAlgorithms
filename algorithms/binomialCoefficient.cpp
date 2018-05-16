@@ -2,7 +2,7 @@
  *  Returns the value of Binomial Coefficient ( n | k )
  *  Calculate value of n! / (k! * (n - k)!)
  *  Used for:
- *  Combinatorics (Combinations of k in n)
+ *  Combinatorics (Combinations of size k in n)
  *  Binomial Theorem for Binomial expansion.
  *  Generation of Pascals Triangle.
  */
@@ -36,4 +36,14 @@ void printPascal(int n) {
         }
         cout << "\n";
     }
+}
+
+/**
+ * Nth Catalan number, based on binomial coefficient.
+ * Used in many combinatorics problems.
+ * O(n) complexity.
+ * @param n 0-based index of nth catalan number to find.
+ */
+int catalanNumber(int n) {
+    return binomialCoefficient(n * 2, n) / (n + 1);
 }
