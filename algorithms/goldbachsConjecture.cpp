@@ -5,7 +5,7 @@
  */
 void goldbachsConjecture(int n, bool primes[]) {
     if (n <= 2 || n % 2 != 0) {
-        cout << "Has to be even number or greater than 3.";
+        cout << "Has to be even number and greater than 2.";
         return;
     }
 
