@@ -40,7 +40,7 @@ void printPascal(int n) {
 
 /**
  * Nth Catalan number, based on binomial coefficient.
- * Used in many combinatorics problems.
+ * Used in many combinatorics problems (Counting problems).
  * O(n) complexity.
  * @param n 0-based index of nth catalan number to find.
  */
