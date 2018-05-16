@@ -1,5 +1,7 @@
 /**
     O(log n) Divide and Conquer search algorithm for sorted arrays.
+    Used for:
+    Finding local maximum or minimum of a function. ("Where the function changes")
 */
 
 int binarySearch(int needle, int haystack[], int hayStackSize) {
