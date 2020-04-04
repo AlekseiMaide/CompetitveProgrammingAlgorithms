@@ -19,5 +19,3 @@ int binarySearch(int needle, int haystack[], int hayStackSize) {
         }
     }
 }
-
-

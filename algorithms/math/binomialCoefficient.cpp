@@ -6,7 +6,6 @@
  *  Binomial Theorem for Binomial expansion.
  *  Generation of Pascals Triangle.
  */
-
 int binomialCoefficient(int n, int k) {
     int coefficient = 1;
 
@@ -28,7 +27,6 @@ int binomialCoefficient(int n, int k) {
  * Used for:
  * Binomial expansion.
  */
-
 void printPascal(int n) {
     for (int line = 0; line < n; ++line) {
         for (int i = 0; i <= line; ++i) {
