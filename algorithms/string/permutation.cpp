@@ -1,10 +1,6 @@
 /**
  * Next lexiographical permutation
  *
- * Approximate description:
- * Find position that is lexiographically greater than previous
- * and based on data find where the next permutation happens.
- *
  * return false if no permutation exists.
  */
 void swap(string& s, int a, int b) {
