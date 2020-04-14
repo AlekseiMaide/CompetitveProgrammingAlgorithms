@@ -12,7 +12,7 @@ int longestPalindromeSubseq(string s) {
         }
     }
 
-    // Init diagonal to 1, because strings of length 1 are all palindromes.
+    // Initialize diagonal to 1, because strings of length 1 are all palindromes.
     for (int i = 0; i < n; i++) {
         DP[i][i] = 1;
     }
