@@ -23,3 +23,22 @@ void sieveOfEratosthenes(long n)  {
         }
     }
 }
+
+
+void sieveOfEratosthenes(vector<long>& result, long n)  {
+    vector<bool> primes(n + 1, true);
+
+    for (size_t p = 2; p * p <= n; ++p) {
+        if (primes[p]) {
+            for (size_t i = p * 2; i <= n; i += p) {
+                primes[i] = false;
+            }
+        }
+    }
+
+    for (long i = 2; i <= n; ++i) { // NB: 1 is not included.
+        if (primes[i]) {
+            result.push_back(i);
+        }
+    }
+}
