@@ -16,6 +16,7 @@ class Fenwick {
     vector<long long> tree;
 public:
     Fenwick(int MaxIdx);
+    Fenwick(int MaxIdx, long long *numbers);
     void update(int idx, long long val);
     long long query(int idx);
 };
@@ -41,4 +42,23 @@ long long Fenwick::query(int idx) {
     }
 
     return sum;
+}
+
+/**
+ * Build Fenwick tree in O(N) time.
+ *
+ * NB: Requires testing.
+ */
+Fenwick::Fenwick(int MaxIdx, long long *numbers) {
+    this->MaxIdx = MaxIdx - 1;
+
+    tree = vector<long long>(MaxIdx);
+    tree.assign(numbers, numbers + MaxIdx);
+
+    for (int i = 1; i < MaxIdx; i++) {
+        int parentIdx = i + (i & -1);
+        if (parentIdx < MaxIdx) {
+            tree[parentIdx] += tree[i];
+        }
+    }
 }
