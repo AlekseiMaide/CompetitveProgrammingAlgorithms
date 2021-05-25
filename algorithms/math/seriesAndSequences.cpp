@@ -1,7 +1,7 @@
 //Todo: Add arichmetic, geometric, harmonic series.
 
-int sumOfGeometricSeries(int n) {
-    return std::pow(2, n) - 1;
+int sumOfGeometricProgression(int firstTerm, int ratio, int n) {
+    return (firstTerm * (1 – pow(ratio, n))) / (1 – ratio);
 }
 
 //Calculate the sum of squares from 1..n
