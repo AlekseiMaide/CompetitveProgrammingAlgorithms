@@ -33,7 +33,7 @@ bool nextPermutation(string &s) {
 /**
     Heap's algorithm for generating permutations.
 **/
-void heapPermutation(string a, int size) {
+void heapPermutation(string& a, int size) {
     if (size == 1) {
         cout << a << endl;
         return;
@@ -42,12 +42,12 @@ void heapPermutation(string a, int size) {
     for (int i = 0; i < size; i++) {
         heapPermutation(a, size - 1);
 
-        if (size % 2 == 1) {
-            // if size is odd, swap 0th and (size-1)th element
-            swap(a[0], a[size - 1]);
-        } else {
+        if (size % 2 == 0) {
             // If size is even, swap ith and (size-1)th element
             swap(a[i], a[size - 1]);
+        } else {
+            // if size is odd, swap 0th and (size-1)th element
+            swap(a[0], a[size - 1]);
         }
     }
 }
