@@ -8,7 +8,7 @@
  *
  * Problems:
  *
- * https://codeforces.com/contest/276/problem/C
+ * https://codeforces.com/contest/276/problem/C <-- Counting frequencies of accessing elements.
  */
 
 class Fenwick {
