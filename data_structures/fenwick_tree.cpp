@@ -46,8 +46,6 @@ long long Fenwick::query(int idx) {
 
 /**
  * Build Fenwick tree in O(N) time.
- *
- * NB: Requires testing.
  */
 Fenwick::Fenwick(int MaxIdx, long long *numbers) {
     this->MaxIdx = MaxIdx - 1;
