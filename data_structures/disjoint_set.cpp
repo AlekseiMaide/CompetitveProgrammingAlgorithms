@@ -9,14 +9,14 @@ private:
     vector<int> id; // id[i] points to the parent of i, if id[i] = i then i is a root node
     int numComponents; // Tracks the number of components in the union find
 public:
-    DisjointSet(int size);
+    DisjointSet(int n);
     int find(int p);
     bool connected(int p, int q);
     int componentSize(int p);
     int getSize();
     int components();
     void unify(int p, int q);
-}
+};
 
 DisjointSet::DisjointSet(int n) {
     size = n;

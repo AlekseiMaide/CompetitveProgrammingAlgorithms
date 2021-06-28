@@ -13,7 +13,7 @@ int nums[2 * N];
 /**
     Build the tree.
 
-    Function '+' can be replaced with another cummutative function such as min/max.
+    Function '+' can be replaced with another cummutative function such as gcd/min/max/and/or/xor.
     Must also initialize the array to INF or -INF instead of 0.
 
 **/
