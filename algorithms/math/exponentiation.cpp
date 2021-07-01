@@ -90,9 +90,11 @@ vector<vector<int>> multiply(vector<vector<int>>& a, vector<vector<int>>& b) {
 
 /**
     Exponentiate matrix to some power in O(log N).
+
+    Useful in DP optimization when the state can be expressed as O(1) space.
 **/
 vector<vector<int>> matrixPower(vector<vector<int>> a, int power) {
-    vector<vector<int>> res = {{0,1},{1,1}};
+    vector<vector<int>> res = {{0,1},{1,1}}; // Change DP state.
 
     while (power > 0) {
         if (power % 2 == 1) res = multiply(res, a);
